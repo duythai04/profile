@@ -2,14 +2,14 @@ const sections = document.querySelectorAll(".page-section");
 const skillCards = document.querySelectorAll(".skill-card");
 const navLinks = document.querySelectorAll("nav a");
 
-/* ===== Intersection Observer ===== */
+/* intersection observer */
 const observer = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
       } else {
-        entry.target.classList.remove("show"); // 👈 QUAN TRỌNG
+        entry.target.classList.remove("show"); 
       }
     });
   },
@@ -21,7 +21,7 @@ const observer = new IntersectionObserver(
 sections.forEach(section => observer.observe(section));
 skillCards.forEach(card => observer.observe(card));
 
-/* ===== ACTIVE MENU ===== */
+/* active menu */
 window.addEventListener("scroll", () => {
   let current = "";
 

@@ -1,4 +1,3 @@
-/* ================= RESET & VARIABLES ================= */
 :root {
   --primary: #38bdf8;
   --dark: #0f172a;
@@ -25,13 +24,13 @@ body {
   overflow-x: hidden;
 }
 
-/* ================= LAYOUT ================= */
+/* layout */
 .container {
   display: flex;
   min-height: 100vh;
 }
 
-/* ================= SIDEBAR ================= */
+/* sidebar */
 .sidebar {
   width: 260px;
   height: 100vh;
@@ -57,7 +56,7 @@ body {
   margin-bottom: 28px;
 }
 
-/* Navigation */
+/* navigation */
 nav {
   width: 100%;
 }
@@ -85,7 +84,7 @@ nav a.active {
   font-weight: 600;
 }
 
-/* Download button */
+/* download button */
 .download {
   margin-top: auto;
   width: 100%;
@@ -97,7 +96,7 @@ nav a.active {
   cursor: pointer;
 }
 
-/* ================= CONTENT ================= */
+/* contents */
 .content {
   margin-left: 260px;
   width: calc(100vw - 260px);
@@ -107,7 +106,7 @@ nav a.active {
 }
 
 
-/* Section */
+/* section */
 .page-section {
   min-height: 100vh;
   padding: 60px 0;
@@ -123,7 +122,7 @@ nav a.active {
   transform: translateY(0);
 }
 
-/* ================= TYPOGRAPHY ================= */
+/*  typography */
 h1 {
   font-size: 42px;
 }
@@ -149,7 +148,7 @@ h2 {
   color: var(--dark);
 }
 
-/* ================= COMMON BOX ================= */
+/* comon box */
 .intro-box,
 .box {
   background: var(--bg-soft);
@@ -183,7 +182,7 @@ ul li {
   margin-bottom: 8px;
 }
 
-/* ================= PROJECT LINK ================= */
+/* project link */
 .project-link {
   max-width: 520px;
 }
@@ -195,14 +194,13 @@ ul li {
   overflow: hidden;
 }
 
-/* Project image */
+/* project image */
 .project-link img {
   width: 100%;
   display: block;
   transition: transform 0.5s ease;
 }
 
-/* Overlay luôn hiển thị */
 .project-link .overlay {
   position: absolute;
   inset: 0;
@@ -213,7 +211,7 @@ ul li {
   justify-content: center;
 }
 
-/* Overlay content */
+/* overlay content */
 .overlay-content {
   text-align: center;
   color: #fff;
@@ -233,12 +231,12 @@ ul li {
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
-/* Hover effect */
+/* hover effect */
 .project-link a:hover img {
   transform: scale(1.08);
 }
 
-/* ================= SKILLS ================= */
+/* skills */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -274,7 +272,7 @@ ul li {
   color: var(--dark);
 }
 
-/* Icons */
+/* icons */
 .icons {
   display: flex;
   flex-wrap: wrap;
@@ -292,7 +290,7 @@ ul li {
   filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25));
 }
 
-/* ================= INTERESTS ================= */
+/* interests  */
 blockquote {
   margin-top: 30px;
   font-style: italic;
