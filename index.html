@@ -1,196 +1,203 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>CV Intern Web Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   />
+
+  <!-- Devicon -->
   <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-/>
-
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  />
 </head>
+
 <body>
+  <div class="container">
 
-<div class="container">
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="avatar">
+        <img src="avatar.jpg" alt="Avatar" />
+      </div>
 
-  <!-- ===== SIDEBAR ===== -->
-  <aside class="sidebar">
-    <div class="avatar">
-      <img src="avatar.jpg" alt="Avatar">
-    </div>
+      <nav>
+        <a class="active" href="#about">GIỚI THIỆU</a>
+        <a href="#experience">KINH NGHIỆM</a>
+        <a href="#projects">DỰ ÁN</a>
+        <a href="#skills">KỸ NĂNG</a>
+        <a href="#education">HỌC VẤN</a>
+        <a href="#interests">SỞ THÍCH</a>
+      </nav>
 
-    <nav>
-      <a class="active" href="#about">GIỚI THIỆU</a>
-      <a href="#experience">KINH NGHIỆM</a>
-      <a href="#projects">DỰ ÁN</a>
-      <a href="#skills">KỸ NĂNG</a>
-      <a href="#education">HỌC VẤN</a>
-      <a href="#interests">SỞ THÍCH</a>
-    </nav>
+      <button class="download">TẢI CV PDF</button>
+    </aside>
 
-    <button class="download">
-      TẢI CV PDF
-    </button>
-  </aside>
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="content">
 
-  <!-- ===== MAIN CONTENT ===== -->
-  <main class="content">
+      <!-- ABOUT -->
+      <section id="about" class="page-section">
+        <h1>Lường Duy <span>Thái</span></h1>
+        <p class="subtitle">Web Developer</p>
 
-    <!-- ABOUT -->
-    <section id="about" class="page-section">
-      <h1>Lường Duy <span>Thái</span></h1>
-      <p class="subtitle">Web Developer</p>
-
-      <p class="location">
-        <i class="fa-solid fa-location-dot"></i>
-        Hà Nội, Việt Nam
-      </p>
-
-      <div class="intro-box">
-        <p>
-          Xin chào, cảm ơn bạn đã xem hồ sơ của tôi!<br><br>
-          Tôi là sinh viên Khoa học dữ liệu, định hướng trở thành
-          <strong>Web Developer</strong>. Tôi yêu thích lập trình,
-          đặc biệt là xây dựng các website thân thiện với người dùng
-          và có khả năng mở rộng tốt.<br><br>
-          Mong muốn được học hỏi và phát triển trong môi trường doanh nghiệp thực tế.
+        <p class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          Hà Nội, Việt Nam
         </p>
-      </div>
-    </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="page-section">
-      <h2>Kinh nghiệm</h2>
-      <div class="box">
-        <h3>Dự án cá nhân</h3>
-        <span>10/2025 - Hiện tại</span>
-        <ul>
-          <li>Xây dựng website bán vé xem phim (Frontend + Backend)</li>
-          <li>Làm việc với REST API, MySQL</li>
-          <li>Triển khai dự án lên Render / Railway</li>
+        <div class="intro-box">
+          <p>
+            Xin chào, cảm ơn bạn đã xem hồ sơ của tôi!<br /><br />
+            Tôi là sinh viên Khoa học dữ liệu, định hướng trở thành
+            <strong>Web Developer</strong>. Tôi yêu thích lập trình,
+            đặc biệt là xây dựng các website thân thiện với người dùng
+            và có khả năng mở rộng tốt.<br /><br />
+            Mong muốn được học hỏi và phát triển trong môi trường doanh nghiệp thực tế.
+          </p>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="page-section">
+        <h2>Kinh nghiệm</h2>
+
+        <div class="box">
+          <h3>Dự án cá nhân</h3>
+          <span>10/2025 - Hiện tại</span>
+          <ul>
+            <li>Xây dựng website bán vé xem phim (Frontend + Backend)</li>
+            <li>Làm việc với REST API, MySQL</li>
+            <li>Triển khai dự án lên Render / Railway</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="page-section">
+        <h2>Dự án</h2>
+
+        <div class="box">
+          <h3>Website Đặt Vé Xem Phim</h3>
+          <p>
+            Website cho phép người dùng xem thông tin phim, chọn suất chiếu,
+            chọn ghế và đặt vé.
+          </p>
+          <ul>
+            <li>Frontend: ReactJS, SCSS</li>
+            <li>Backend: Node.js, Express</li>
+            <li>Database: MySQL</li>
+          </ul>
+        </div>
+
+        <!-- Project Preview -->
+        <div class="project-link">
+          <a
+            href="https://cinema-one-brown.vercel.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="project.png" alt="Website Đặt Vé Xem Phim" />
+
+            <div class="overlay">
+              <div class="overlay-content">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>CINEMA-ONE-BROWN</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="page-section">
+        <h2>Kỹ năng</h2>
+
+        <div class="skills-grid">
+
+          <!-- Frontend -->
+          <div class="skill-card">
+            <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+            <div class="icons">
+              <i class="devicon-html5-plain colored"></i>
+              <i class="devicon-css3-plain colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-react-original colored"></i>
+              <i class="devicon-sass-original colored"></i>
+              <i class="devicon-bootstrap-plain colored"></i>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card">
+            <h3><i class="fa-solid fa-server"></i> Backend</h3>
+            <div class="icons">
+              <i class="devicon-nodejs-plain colored"></i>
+              <i class="devicon-express-original"></i>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="skill-card">
+            <h3><i class="fa-solid fa-database"></i> Cơ sở dữ liệu</h3>
+            <div class="icons">
+              <i class="devicon-mysql-plain colored"></i>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card">
+            <h3><i class="fa-solid fa-toolbox"></i> Công cụ</h3>
+            <div class="icons">
+              <i class="devicon-git-plain colored"></i>
+              <i class="devicon-github-original"></i>
+              <i class="devicon-postman-plain colored"></i>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="page-section">
+        <h2>Học vấn</h2>
+
+        <div class="box">
+          <h3>Đại học khoa học tự nhiên - ĐHQGHN</h3>
+          <span>2022 - 2026</span>
+          <p>Chuyên ngành: Khoa học dữ liệu</p>
+        </div>
+      </section>
+
+      <!-- INTERESTS -->
+      <section id="interests" class="page-section">
+        <h2>Sở thích</h2>
+
+        <ul class="interests">
+          <li>Lập trình & học công nghệ mới</li>
+          <li>Xem phim</li>
+          <li>Đá bóng</li>
+          <li>Nghe nhạc</li>
         </ul>
-      </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="page-section">
-      <h2>Dự án</h2>
+        <blockquote>
+          "Không ngừng học hỏi mỗi ngày để trở thành phiên bản tốt hơn của chính mình."
+        </blockquote>
+      </section>
 
-      <div class="box">
-        <h3>Website Đặt Vé Xem Phim</h3>
-        <p>
-          Website cho phép người dùng xem thông tin phim, chọn suất chiếu,
-          chọn ghế và đặt vé.
-        </p>
-        <ul>
-          <li>Frontend: ReactJS, SCSS</li>
-          <li>Backend: Node.js, Express</li>
-          <li>Database: MySQL</li>
-        </ul>
-      </div>
-      <div class="project-link">
-  <a href="https://cinema-one-brown.vercel.app/" target="_blank">
-    <img src="project.png" alt="Website Đặt Vé Xem Phim">
-
-    <div class="overlay">
-      <div class="overlay-content">
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        <span>CINEMA-ONE-BROWN</span>
-      </div>
-    </div>
-  </a>
-</div>
-
-  </a>
-</div>
-
-
-      
-    </section>
-
-    <!-- SKILLS -->
-<section id="skills" class="page-section">
-  <h2>Kỹ năng</h2>
-
-  <div class="skills-grid">
-
-    <!-- Frontend -->
-    <div class="skill-card">
-      <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
-      <div class="icons">
-        <i class="devicon-html5-plain colored"></i>
-        <i class="devicon-css3-plain colored"></i>
-        <i class="devicon-javascript-plain colored"></i>
-        <i class="devicon-react-original colored"></i>
-        <i class="devicon-sass-original colored"></i>
-        <i class="devicon-bootstrap-plain colored"></i>
-      </div>
-    </div>
-
-    <!-- Backend -->
-    <div class="skill-card">
-      <h3><i class="fa-solid fa-server"></i> Backend</h3>
-      <div class="icons">
-        <i class="devicon-nodejs-plain colored"></i>
-        <i class="devicon-express-original"></i>
-      </div>
-    </div>
-
-    <!-- Database -->
-    <div class="skill-card">
-      <h3><i class="fa-solid fa-database"></i> Cơ sở dữ liệu</h3>
-      <div class="icons">
-        <i class="devicon-mysql-plain colored"></i>
-      </div>
-    </div>
-
-    <!-- Tools -->
-    <div class="skill-card">
-      <h3><i class="fa-solid fa-toolbox"></i> Công cụ</h3>
-      <div class="icons">
-        <i class="devicon-git-plain colored"></i>
-        <i class="devicon-github-original"></i>
-        <i class="devicon-postman-plain colored"></i>
-      </div>
-    </div>
-
+    </main>
   </div>
-</section>
 
-
-    <!-- EDUCATION -->
-    <section id="education" class="page-section">
-      <h2>Học vấn</h2>
-      <div class="box">
-        <h3>Đại học khoa học tự nhiên - ĐHQGHN</h3>
-        <span>2022 - 2026</span>
-        <p>Chuyên ngành: Khoa học dữ liệu</p>
-      </div>
-    </section>
-
-    <!-- INTERESTS -->
-    <section id="interests" class="page-section">
-      <h2>Sở thích</h2>
-      <ul class="interests">
-        <li>Lập trình & học công nghệ mới</li>
-        <li>Xem phim</li>
-        <li>Đá Bóng</li>
-        <li>Nghe nhạc</li>
-      </ul>
-
-      <blockquote>
-        "Không ngừng học hỏi mỗi ngày để trở thành phiên bản tốt hơn của chính mình."
-      </blockquote>
-    </section>
-
-  </main>
-</div>
-<script src="index.js"></script>
+  <!-- JS -->
+  <script src="index.js"></script>
 </body>
 </html>
