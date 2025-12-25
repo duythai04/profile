@@ -453,7 +453,6 @@ blockquote {
 
   /* mobile menu */
   .mobile-menu {
-    margin-top: 100px;
     display: block;
     position: fixed;
     inset: 0;
@@ -462,6 +461,7 @@ blockquote {
     transform: translateX(100%);
     transition: 0.3s ease;
     z-index: 1000;
+    height: 500px;
   }
 
   .mobile-menu.open {
