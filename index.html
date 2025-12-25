@@ -19,10 +19,32 @@
 </head>
 
 <body>
+
+<!-- mobile header -->
+<header class="mobile-header">
+  <div class="mobile-name">Lường Duy Thái</div>
+  <button class="menu-toggle" id="menuToggle">
+    <i class="fa-solid fa-bars"></i>
+  </button> 
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="#about" class="active">GIỚI THIỆU</a>
+    <a href="#experience">KINH NGHIỆM</a>
+    <a href="#projects">DỰ ÁN</a>
+    <a href="#skills">KỸ NĂNG</a>
+    <a href="#education">HỌC VẤN</a>
+    <a href="#interests">SỞ THÍCH</a>
+
+    
+  </nav>
+</div>
   <div class="container">
 
     <!-- sidebar-->
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
       <div class="avatar">
         <img src="img/avatar.jpg" alt="Avatar" />
       </div>
@@ -36,7 +58,8 @@
         <a href="#interests">SỞ THÍCH</a>
       </nav>
 
-      <button class="download">TẢI CV PDF</button>
+      
+
     </aside>
 
     <!-- contents-->
@@ -59,9 +82,12 @@
             <strong>Web Developer</strong>. Tôi yêu thích lập trình,
             đặc biệt là xây dựng các website thân thiện với người dùng
             và có khả năng mở rộng tốt.<br /><br />
-            Mong muốn được học hỏi và phát triển trong môi trường doanh nghiệp thực tế.
+            Mong muốn được học hỏi và phát triển trong môi trường doanh nghiệp thực tế. <br /><br />
+            <strong>Front-end: </strong> Tôi có kinh nghiệp làm việc với HTML, CSS/SCSS, JavaScript (ES6+), ReactJS (Hooks) <br /><br />
+            <strong>Back-end: </strong> Tôi có kinh nghiệm làm việc với Node.js, ExpressJS, MySql, REST API
           </p>
         </div>
+
       </section>
 
       <!-- experience-->
@@ -130,7 +156,6 @@
               <i class="devicon-javascript-plain colored"></i>
               <i class="devicon-react-original colored"></i>
               <i class="devicon-sass-original colored"></i>
-              <i class="devicon-bootstrap-plain colored"></i>
             </div>
           </div>
 
@@ -193,7 +218,7 @@
 
     </main>
   </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
